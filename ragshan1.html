@@ -1,0 +1,525 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ragshan Technologies - Welcome</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+      .social-sidebar {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.social-icon {
+  display: block;
+  background-color: #00bcd4;
+  color: white;
+  font-size: 1.2em;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 50%;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #008c9e;
+  transform: scale(1.1);
+}
+
+      @media (max-width: 768px) {
+  nav ul {
+    display: block;
+    text-align: center;
+  }
+}
+    /* Bullet Train Scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #00eaff, #007bff);
+  border-radius: 50px;
+  border: 4px solid #000;
+  box-shadow: 0 0 20px #00eaff;
+  animation: trainMove 2s infinite linear;
+}
+
+@keyframes trainMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #007bff, #00eaff);
+  box-shadow: 0 0 30px #00eaff;
+}
+
+       html {
+  scroll-behavior: smooth;
+}
+
+      /* Apply to the whole body for a smooth entry */
+body {
+  animation: fadeInUp 1.2s ease-out;
+}
+
+/* Fade-in with a slight upward motion */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Gradient Background with Animation */
+.hero {
+  height: 100vh;
+  background: linear-gradient(-45deg, #00bcd4, #008c9e, #005f73, #002f3f);
+  background-size: 400% 400%;
+  animation: gradientBG 8s ease infinite;
+}
+
+/* Animation for Gradient Movement */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      position: fixed;
+      width: 100%;
+      padding: 20px 0;
+      z-index: 1000;
+      transition: background 0.3s;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 10%;
+    }
+    nav .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00bcd4;
+    }
+    .hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: black;
+  text-align: left; /* Aligns text to the left */
+  width: 100%; /* Ensures full width for alignment */
+  padding-left: 10%; /* Adjusts spacing from the left */
+}
+  .hero p {
+  text-align: left; /* Aligns the tagline to the left */
+  padding-left: 10%;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  text-align: center;
+  background-color: #00bcd4;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-left: calc(50% - 90px); /* Centers button (90px is half button width) */
+}
+
+.hero .btn:hover {
+  background-color: #008c9e;
+}
+
+#about {
+  text-align: left; /* Aligns the About Us section to the left */
+  padding-left: 10%;
+}
+      }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+      #color-change-section {
+  height: 100vh;
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+  background-size: 300% 300%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  animation: gradientMove 6s infinite alternate;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.content-section {
+  height: 80vh;
+  padding: 80px 10%;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+h2, h3 {
+  font-size: 3em;
+  color: #008c9e;
+}
+
+p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+    .btn {
+      background-color: #00bcd4;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #008c9e;
+    }
+        section {
+      padding: 100px 10%;
+      text-align: center;
+    }
+        section {
+      padding: 100px 10%;
+      text-align: left;
+    }
+    .service-cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+      .topic-box {
+  background-color: #fff;
+  border: 2px solid #00bcd4;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.topic-box h3 {
+  color: #008c9e;
+}
+
+.topic-box p {
+  color: #555;
+}
+
+.topic-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+    .card {
+      background-color: white;
+      padding: 40px;
+      border-radius: 20px
+       
+
+       
+          </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Ragshan Technologies</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+     <img src="C:\Users\murug\Downloads\ragshan-technologies-high-resolution-logo (1).png" style="width:1000px; height:200px; border-radius:40px;">
+    <p>Build your imagination</p>
+    <a href="#about" class="btn">Explore Services             </a>
+  </section>
+     <section id="about">
+    <ul><h2>About Us</h2></ul>
+    <br><p>Ragshan offers hardware board design services based on
+Embedded Processors, MCUs, SoCs and FPGAs. Having an
+Expertise in High-Speed board Design, Multilayer PCB layout
+Design, SI/PI simulation & analysis, Meeting the product
+compliance / qualification standards for environmental, safety
+and EMI/EMC. Meeting consumer, Industrial, Medical
+requirements.<br>    <hr>
+<hr>
+   <div class="light-blue-box"><br><br>
+<br><br><u><p><h2><b>Hardware Design Services:</b></h2><br></u>
+
+<br>Ragshan offers complete end to end hardware design and development services based on Embedded Processors, MCUs, SoCs and FPGAs. Having
+experience in providing end to end solution for consumer and Medical product requirements.
+
+<b>Having an Expertise in</b>
+<ul>
+<li>Defining hardware architecture</li>
+
+<li>Schematics design</li>
+
+<li>Multilayer PCB layout Design</li>
+
+<li>Component selection and BOM optimization</li>
+
+<li>SI/PI simulation & analysis</li>
+
+<li>Hardware prototype development and testing</li>
+
+<li>Sustenance engineering services</li></ul>
+
+   <br><br> <b>Hardware Design Skill set:</b>
+
+Ragshan offers complete end to end hardware design and development services based on Embedded Processors, MCUs, SoCs and FPGAs.
+
+<li>Domain Areas: Medical, semiconductor, Consumer electronics</li>
+
+<li>Processor’s: ADI’s SHARC & Blackfin family DSP, Marvell’s PXA270, Freescale’s i.MX27, TI’s DaVinci DM355, DM6437 & OMAP3530,
+Transwitch’s DSP+RISC based network processor</li>
+
+<li>Design Analysis: Power, Derating, Tolerance, Thermal Analysis, Signal Integrity, like to like analysis/Specification comparison, DFM,
+DFT & EMC, dFMEA, WCCA etc.</li>
+
+<li>MCU’s: MSP430, STM32, Cypress PSOC3, Toshiba TMPM32</li>
+
+<li>FPGA’s: Spartan-3E, Spartan 3A DSP, Virtex-5 & Spartan 6, Agilex</li>
+
+<li>Memory Interfaces: SDRAM, DDR2, DDR3/4, NAND/NOR Flash</li>
+
+<li>Interfaces/Bus: RGMII, GMII, 10G/25G, PCI, PCI Express, USB, I2C, I2S, TDM, SPI, TMDS</li>
+
+<li>Tools: Orcad 9.1 & 16.3, Cadence Allegro, Ltspice</li>
+
+<br><br>Exposure to Quality Management System (ISO13485) and Risk Management (ISO14971) standard for medical device development<br>
+</div>
+
+<style>
+  .light-blue-box {
+    background-color: #d6f0ff; /* Light Blue Color */
+    color: #005073; /* Darker Blue Text for Contrast */
+    padding: 20px;
+    border-radius: 20px; /* Rounded Corners */
+    border: 2px solid #a3d5ff; /* Slightly Darker Blue Border */
+    width: fit-content;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+</style><br><br>
+<div class="light-green-box">
+  <br><br><u><h2><b>PCB Layout Design Services:</b><br></h2></u>
+
+Capabilities:
+
+<ul><li>Footprint/Symbol creation and library management</li>
+
+<li>Material selection, and stack up creation based on impedance requirement</li>
+
+<li>PCB constraints setup based on schematics and high speed interfaces</li>
+
+<li>Controlled impedance design</li>
+
+<li>Back drill, Via in Pad, Blind and buried Vias</li>
+
+<li>Design for DFM/DFA/DFT</li>
+
+<li>On site or offshore design support</li>
+
+<li>Periodic design review with customer</li>
+
+<li>Internal design review by using Checklist</li>
+
+<li>Tool support: Cadence Allegro</li></ul>
+
+<b>Technical Skills:</b>
+
+<ul><li>Up to 20 layer PCB design</li>
+
+<li>USB, HDMI, Bluetooth</li>
+
+<li>DDR3/4 Memory interfaces</li>
+
+<li>10G/25Giga bit Ethernet</li>
+
+<li>PCI express 3.0<</li><br></ul>
+</div>
+
+<style>
+  .light-green-box {
+    background-color: #d4edda; /* Light Green Color */
+    color: #155724; /* Dark Green Text for Contrast */
+    padding: 20px;
+    border-radius: 20px; /* Rounded Corners */
+    border: 2px solid #c3e6cb; /* Slightly Darker Green Border */
+    width: fit-content;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+</style><br><br>
+<div class="light-pink-box">
+  <br><br><u><h2><b>Testing Services</b><br></h2></u> Ragshan Technologies have hands on experience in performing testing activities such as characterization of customer’s product/PCB during prototype/POC stage, functional testing and design verification/validation testing to meets the product/system/sub system requirements. <br><br><br><h4>Engineering Validation</h4> <ul> <li>Board bring up</li> <li>Interface/feature level testing (SW & HW)</li> <li>PCB level characterization</li> <li>Component/sub assembly stress testing</li> <li>Thermal & Power consumption</li> <li>Prescan EMI/EMC</li> <li>Mechanical Enclosure fitment</li></ul> <br><br><br><h4><b>PCB level (sub assembly) testing & characterization</b></h4> <ul><li>Power rails- Voltage, Ripple, ON/OFF sequence</li> <li>Signal quality (overshoot/undershoot) analysis</li> <li>AC characteristics/timing measurement (setup/hold time..)</li> <li>Clock timing/jitter</li> <li>Improve signal quality with filter/termination</li></ul> <br> <br><br><h4>Design Verification/Product Validation</h4> <ul><li>Understanding the product/subsystem requirements</li> <li>Test plan, Test methods, protocol preparation</li> <li>Test Fixtures design</li> <li>Define the sample size (statistical process)</li> <li>Dry run and test execution</li> <li>Preparation of test results/reports</li> <li>Update requirement traceability matrix</li> <li>Environmental and regulatory compliance support</li> <li>DFM and DFT review</li>
+</div>
+        <br><br><img src="file:///home/chronos/u-5c7cb8ed2904824b7a7b0c5534bd60c060a5216f/MyFiles/Downloads/Screenshot%202025-03-30%205.35.30%20PM.png" width="1000" height="500">
+         <style>
+  .styled-image {
+  border: 5px solid navy; /* Navy Blue Border */
+  border-radius: 20px; /* Rounded Corners */
+  width: 300px; /* Adjust Width */
+  height: 200px; /* Adjust Height */
+  object-fit: cover; /* Ensures the image covers the box without distortion */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Adds a Shadow */
+  margin: 20px; /* Adds Space Around the Image */
+  transition: transform 0.3s ease; /* Smooth Hover Effect */
+}
+
+.styled-image:hover {
+  transform: scale(1.05); /* Slight Zoom Effect on Hover */
+}
+</style>
+
+
+<style>
+  .light-pink-box {
+    background-color: #ffdde1; /* Light Pink Color */
+    color: #333; /* Darker Text for Contrast */
+    padding: 20px;
+    border-radius: 20px; /* Rounded Corners */
+    border: 2px solid #ffb6c1; /* Slightly Darker Pink Border */
+    width: fit-content;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+</style>
+
+  </section>
+    <section class="content-section">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Consulting</h3>
+        <p>Expert advice to grow your business.</p>
+      </div>
+      <div class="card">
+        <h3>Development</h3>
+        <p>Custom solutions built to meet your goals.</p>
+      </div>
+      <div class="card">
+        <h3>Support</h3>
+        <p>24/7 assistance to ensure your operations run smoothly.</p>
+      </div>
+    </div>
+  </section>
+    <section id="color-change-section">
+  <h2>Scroll Down there's more!</h2>
+</section>
+<section id="contact">
+  <h3>You can now contact us!</h3>
+  <p>We will respond as soon as possible.</p>
+   <br> <h6>Contact Us</h6>
+    <form action="mailto:muruganmayileri2710@gmail.com" method="post" enctype="text/plain">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required />
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required />
+
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" required></textarea>
+
+  <button type="submit">Send Message</button>
+</form>
+  </section>
+    <div class="social-sidebar">
+  <a href="https://x.com/Ragshantech" class="social-icon" target="_blank">X</a>
+  <a href="https://www.youtube.com/channel/UCYMane-HPIsU6_b19NkypqA" class="social-icon" target="_blank">YT</a>
+</div>
+
+
+  <footer>
+    <p>&copy; 2025 Ragshan Technologies. All rights reserved.</p>
+  </footer>
+</body>
+</html>
